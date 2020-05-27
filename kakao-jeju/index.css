@@ -1,0 +1,593 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'NanumSquare', 'Open Sans', sans-serif;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+}
+
+.img_box > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 상단메뉴 */
+
+.header {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.header-menu {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    font-size: 18px;
+    color: white;
+    padding: 40px 0;
+    float: left;
+    box-sizing: border-box;
+}
+
+.header-logo {
+    font-size: 0.8rem;
+}
+
+.header-logo > b {
+    font-size: 1.3rem;
+}
+
+.header-side-menu {
+    float: right;
+}
+
+.header-side-menu > ul {
+    display: inline-block;
+    float: right;
+}
+
+.header-side-menu > li {
+    display: inline-block;
+
+}
+
+.header-side-menu > li > a {
+    display: block;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* 비주얼 */
+
+.visualWrap {
+    background-image: url(http://t1.kakaocdn.net/jewika/images/2020-04-06/c582fb00e9f741df837ab262fdca28dc.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    box-sizing: :border-box;
+    top: 0;
+}
+
+.visualWrap::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+.visual {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.visual > .visual-top {
+    display: block;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.visual > div {
+    padding: 30px 0 70px 0;
+    font-size: 100px;
+}
+
+.visual > div > span {
+    color: gold;
+    font-weight: bold;
+}
+
+.visual > ul > li {
+    display: inline-block;
+}
+
+.visual > ul > li > a {
+    display: block;
+    padding: 10px 80px;
+    border: 1px solid white;
+    font-size: 1.1rem;
+}
+
+.visual > ul > li > a:hover {
+    background: white;
+    color: black;
+}
+
+.visual > p {
+    padding: 30px 0;
+    line-height: 30px;
+}
+
+.visual > a {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.visual > .down {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%);
+}
+
+.visual > .down::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 36px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+
+/*컨텐츠*/
+
+.contentWrap {
+    margin: 150px 0;
+}
+
+.contentWrap > div {
+    width: 1240px;
+    margin: 100px auto;
+}
+
+.contentWrap > div > h3 {
+    padding: 15px 0;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.contentWrap > div > h3::after {
+    /* content: "\f061"; */
+    content: ">";
+    font-family: "Font Awesome 5 Free";
+    clear: both;
+    display: block;
+    float: right;
+}
+
+/* today con1 */
+
+.con1_left {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.con1_right {
+    width: 50%;
+    float: left;
+    padding-left: 100px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.con1_left > .weather {
+    display: inline-block;
+}
+
+.con1_left > .number {
+    font-size: 100px;
+    line-height: 0px;
+    position: absolute;
+    left: 30%;
+    font-weight: bold;
+}
+
+.number > span {
+    font-size: 1.2rem;
+    position: absolute;
+    top: -50px;
+}
+
+.con1_left > .sub {
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub > span {
+    color: green;
+    font-weight: bold;
+}
+
+.con1_left > p {
+    display: inline-block;
+}
+
+.con1_left > .weather {
+    background: url(https://ifh.cc/g/u2jSu6.jpg) no-repeat;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.con1_right > h5 {
+    font-size: 1.3rem;
+    line-height: 0;
+}
+
+.con1_right > ul > li {
+    display: inline-block;
+    padding: 10px;
+    background: #555;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+/* live con2 */
+
+.con2 > div {
+    width: calc(100% / 3);
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.con2 > div:last-child {
+    padding-right: 0;
+}
+
+.con2 .img_box {
+    width: 100%;
+    height: 200px;
+    background: skyblue;
+}
+
+.con2 .title {
+    font-size: 1.4rem;
+    height: 60px;
+    margin-top: 30px;
+    line-height: 150%;
+}
+
+.con2 > div > p {
+    line-height: 150%;
+    color: grey;
+}
+
+
+/* space con3 */
+.con3 {
+    height: 480px;
+}
+
+.slider-box-1 {
+    position: relative;
+}
+
+.slider-box-1 > .slides > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    background: no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+.slider-box-1 > .slides > div.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slides > div::before {
+    position: absolute;
+    content: "";
+    clear: both;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.slides > div > .text {
+    position: absolute;
+    padding: 40px 50px;
+}
+
+.slides > div > .text > h2 {
+    font-size: 2rem;
+}
+
+.slides > div > .text > p {
+    line-height: 170%;
+    font-size: 0.9rem;
+}
+
+.slides > div > .text > a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 1px solid white;
+    transition: 0.2s;
+}
+
+.slides > div > .text > a:hover {
+    background: white;
+    color: black;
+}
+
+/* con3 동그라미 버튼 */
+
+.page-btns {
+    position: absolute;
+    left: 90%;
+    top: 350px;
+    white-space: nowrap;
+}
+
+.page-btns > div {
+    margin: 0 4px;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 1);
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.page-btns > div.active {
+    background: yellow;
+    height: 15px;
+    border-radius: 5px;
+}
+
+/* news con4 */
+
+.con4 > div {
+    width: calc(100%/3);
+    float: left;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+.con4 > div:last-child {
+    padding-right: 0;
+}
+
+.con4 > div > h2 {
+    line-height: 160%;
+    cursor: pointer;
+}
+
+.con4 > div > p {
+    line-height: 160%;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+/* withjeju con5 */
+
+.con5 > div {
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    height: 300px;
+    color: white;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.con5 > div:nth-of-type(even) {
+    margin-right: 0;
+}
+
+.con5 > div::before {
+    content: "";
+    display: block;
+    clear: both;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.con5 .text {
+    position: absolute;
+    z-index: 10;
+    padding: 30px 40px;
+}
+
+.con5 .text > h2 {
+    font-size: 2rem;
+}
+
+.con5 .text > p {
+    font-size: 0.9rem;
+    line-height: 170%;
+    font-weight: lighter;
+}
+
+.con5 .text > a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    position: absolute;
+    top:220px;
+}
+
+.con5 .text > a:hover {
+    background: white;
+    color: black;
+}
+
+
+/* footer */
+.footerWrap {
+    background: url(http://t1.kakaocdn.net/jewika/images/footer_bg.png) no-repeat;
+    background-size: cover;
+    color: white;
+    height: 400px;
+}
+
+.footer {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.footer-1 {
+    width: 25%;
+    float: left;
+}
+
+.footer-1 > p {
+    line-height: 10px;
+}
+
+.footer-1 > .plus {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 13px 20px 13px 50px;
+    margin-top: 30px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.footer-1 > .plus::before {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    left: 8%;
+    border-radius: 50%;
+}
+
+.footer-1 > .plus::after {
+    content: "P";
+    display: block;
+    clear: both;
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    left: 11%;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+}
+
+.footer-2 > ul {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.footer-2 > ul > li {
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+
+}
+
+.footer-2 > ul > li > ul {
+    margin-top: 20px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, .7);
+}
+
+.footer-2 > ul > li > ul > li {
+    margin-top: 10px;
+}
+
+.footer .site {
+    display: block;
+    margin-top: 5px;
+    float: right;
+}
+
+.footer .site::after {
+    content: "+";
+    clear: both;
+    font-size: 1.2rem;
+    margin-left: 50px;
+
+}
